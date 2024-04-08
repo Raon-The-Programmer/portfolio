@@ -43,8 +43,9 @@
 
 .homepage-image-wrapper {
 	overflow: hidden;
-	border-radius: 10%;
-	transform: rotate(3deg);
+	border-radius: 50%;
+	box-shadow:3px 2px 10px rgba(0, 0, 0, 0.286) ;
+	
 }
 
 .homepage-image-wrapper img {
@@ -87,15 +88,53 @@
 .homepage-article {
 	padding-bottom: 5px;
 }
-
+.resumeButton{
+	height: 50px;
+	background-color: #F4D150;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	border-radius: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border: none;
+ 	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+.resumeButton:hover{
+	background-color: #edbd0e;
+}
 .homepage-works {
 	flex-basis: 600px;
 	padding-top: 30px;
 }
-
+.downloadIcon{
+	width: 20px;
+	margin-right: 7px;
+}
+.inBtn{
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+}
+.inTxt{
+	color: black;
+	font-weight: 500;
+}
+.homeIcon{
+	display: flex;
+	justify-content: space-between;
+	align-items:flex-end;
+}
+@media (min-width:1025px) {
+	.homeIcon{
+		width: 55%;
+	}
+}
 @media (max-width: 1024px) {
 	.homepage-first-area {
 		flex-direction: column;
+	}
+	.homeIcon{
+		width: 60%;
 	}
 
 	.homepage-first-area-left-side {

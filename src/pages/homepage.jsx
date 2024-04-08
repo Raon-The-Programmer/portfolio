@@ -1,15 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
-
+import downloadImg from './download.png'
 import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import resume from './talentship.pdf'
 import {
-	faTwitter,
 	faGithub,
 	faStackOverflow,
-	faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
-
+import Profile from './Profile.png'
 import Logo from "../components/common/logo";
 import Footer from "../components/common/footer";
 import NavBar from "../components/common/navBar";
@@ -104,7 +103,7 @@ const Homepage = () => {
 								<div className="homepage-image-container">
 									<div className="homepage-image-wrapper">
 										<img
-											src="homepage.jpg"
+											src={Profile}
 											alt="about"
 											className="homepage-image"
 										/>
@@ -112,18 +111,8 @@ const Homepage = () => {
 								</div>
 							</div>
 						</div>
-
+						<div className="homeIcon">
 						<div className="homepage-socials">
-							<a
-								href={INFO.socials.twitter}
-								target="_blank"
-								rel="noreferrer"
-							>
-								<FontAwesomeIcon
-									icon={faTwitter}
-									className="homepage-social-icon"
-								/>
-							</a>
 							<a
 								href={INFO.socials.github}
 								target="_blank"
@@ -145,16 +134,6 @@ const Homepage = () => {
 								/>
 							</a>
 							<a
-								href={INFO.socials.instagram}
-								target="_blank"
-								rel="noreferrer"
-							>
-								<FontAwesomeIcon
-									icon={faInstagram}
-									className="homepage-social-icon"
-								/>
-							</a>
-							<a
 								href={`mailto:${INFO.main.email}`}
 								target="_blank"
 								rel="noreferrer"
@@ -165,8 +144,11 @@ const Homepage = () => {
 								/>
 							</a>
 						</div>
-
+						<div>
+							<button className="resumeButton"><a className="inBtn" href={resume} download='resume'><img className="downloadIcon" src={downloadImg} alt="download" /><h4 className="inTxt">Resume</h4></a></button></div>
+						</div>
 						<div className="homepage-projects">
+							
 							<AllProjects />
 						</div>
 

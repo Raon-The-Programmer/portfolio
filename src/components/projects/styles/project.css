@@ -42,7 +42,12 @@
 	margin-bottom: 1em;
 	font-weight: 700;
 }
-
+.links{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
 .project-description {
 	color: var(--secondary-color);
 }
@@ -50,6 +55,7 @@
 .project-link {
 	display: flex;
 	align-items: center;
+	
 	color: var(--secondary-color);
 	font-size: 12px;
 	padding-top: 20px;
@@ -58,11 +64,16 @@
 .project-link-icon {
 	padding-left: 5px;
 	font-size: 13px;
+	margin-right: 7px;
+	left: 0;
 }
 
 .project-link-text {
-	padding-left: 20px;
 	font-weight: 700;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
 }
 
 @media (max-width: 600px) {

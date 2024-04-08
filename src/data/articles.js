@@ -1,16 +1,15 @@
 import React from "react";
-
+import image1 from './recharga.png'
 function article_1() {
 	return {
-		date: "7 May 2023",
-		title: "The Benefits of Cloud Computing",
-		description:
-			"Cloud computing offers a range of benefits, including cost savings and increased flexibility. Find out why more businesses are turning to the cloud.",
+		date: "Nov 2023 to Dec 2023",
+		title: "Full-Stack Developer (INTERNSHIP)",
+		description:"As a Full Stack Intern at Recharga Chargine, I spearheaded the front end development efforts, utilizing React.js to craft a dynamic and intuitive website. Contributed directly to enhancing the company's digital presence in the sustainable energy sector. Exciting hands-on experience in a startup environment, driving innovation in electric battery technology.",
 		keywords: [
-			"The Benefits of Cloud Computing",
-			"Tharindu",
-			"Tharindu N",
-			"Tharindu Nayanajith",
+			"Full Stack Developer",
+			"Rahul",
+			"Rahul John",
+			"Recharga Chargine",
 		],
 		style: `
 				.article-content {
@@ -20,6 +19,9 @@ function article_1() {
 				}
 
 				.randImage {
+					display:flex;
+					width:60vw;
+					margin:10px;
 					align-self: center;
 					outline: 2px solid red;
 				}
@@ -27,10 +29,11 @@ function article_1() {
 		body: (
 			<React.Fragment>
 				<div className="article-content">
-					<div className="paragraph">Content of article 1</div>
+					<div className="paragraph">During my internship at Recharga Chargine, I played a pivotal role in developing the company's B2B-focused website. My primary responsibility involved creating an engaging and user-friendly front end interface using React.js. This included designing and implementing features such as a newsletter subscription system, enabling users to receive regular updates directly to their email addresses. Additionally, I contributed to the creation of a captivating main page featuring animated elements to showcase the company's innovative battery solutions. Through this experience, I gained valuable insight into B2B web development and honed my skills in crafting dynamic digital experiences.</div>
+					<a href="https://www.rechargachargine.com/">Official Site</a>
 					<img
-						src="https://picsum.photos/200/300"
-						alt="random"
+						src={image1}
+						alt="example"
 						className="randImage"
 					/>
 				</div>
@@ -39,27 +42,7 @@ function article_1() {
 	};
 }
 
-function article_2() {
-	return {
-		date: "7 May 2023",
-		title: "Artificial Intelligence in Healthcare",
-		description:
-			"AI is transforming the healthcare industry, from improving patient outcomes to streamlining operations. Discover the latest applications of this game-changing technology.",
-		style: ``,
-		keywords: [
-			"Artificial Intelligence in Healthcare",
-			"Tharindu",
-			"Tharindu N",
-			"Tharindu Nayanajith",
-		],
-		body: (
-			<React.Fragment>
-				<h1>Content of article 2</h1>
-			</React.Fragment>
-		),
-	};
-}
 
-const myArticles = [article_1, article_2];
+const myArticles = [article_1];
 
 export default myArticles;

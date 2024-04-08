@@ -5,7 +5,7 @@ import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
 import Socials from "../components/about/socials";
-
+import setup from './setup.webp'
 import INFO from "../data/user";
 import SEO from "../data/seo";
 
@@ -54,7 +54,7 @@ const About = () => {
 								<div className="about-image-container">
 									<div className="about-image-wrapper">
 										<img
-											src="about.jpg"
+											src={setup}
 											alt="about"
 											className="about-image"
 										/>
