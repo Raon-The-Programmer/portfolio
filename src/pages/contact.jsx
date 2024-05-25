@@ -62,7 +62,7 @@ const Contact = () => {
 							<a
 								href={INFO.socials.linkedin}
 								target="_blank"
-								rel="noreferrer"
+								rel="noopener noreferrer"
 							>
 								{INFO.socials.linkedin}
 							</a>
